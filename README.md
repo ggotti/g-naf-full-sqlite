@@ -6,7 +6,8 @@ containing data loaded from the
 The schema definition has been modified to work with SQLite, such as defining primary and
 foreign keys at table creation.
 
-The sqlite file is located in `/map/fullGNAF.db` after the build is complete.
+The sqlite file is located in `/map/fullGNAF.db` after the build is complete. Docker image can
+be accessed using `docker push ggotti/g-naf-full-sqlite:latest`
 
 The intent of this image is to use the normalised GNAF data for some other purpose. You
 must adhere to the [G-NAF  End User Licence Agreement (EULA)](https://data.gov.au/dataset/ds-dga-19432f89-dc3a-4ef3-b943-5326ef1dbecc/distribution/dist-dga-09f74802-08b1-4214-a6ea-3591b2753d30/details?q=) to use this image.
