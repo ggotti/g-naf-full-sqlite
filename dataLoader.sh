@@ -20,3 +20,7 @@ while IFS= read -r -d '' line; do
   tableName="$(echo $fileName | sed -rn 's/(WA|NT|VIC|NSW|SA|TAS|OT|ACT|QLD)_(.*)_psv.psv/\2/p')"
   (echo .mode csv; echo .separator "|"; echo .import \"${line}\" ${tableName}) | sqlite3 ${DATABASE_FILE}
 done
+
+# This is to cleanup the empty values in the import to NULL. Makes life easier later.
+cat /root/scripts/nullCleanup.sql | sqlite3 ${DATABASE_FILE}
+
