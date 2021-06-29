@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOWNLOAD_DIRECTORY="/tmp/gnafExport/FEB21_GNAF_PipeSeparatedValue_20210222101749/G-NAF/G-NAF FEBRUARY 2021"
+DOWNLOAD_DIRECTORY="/tmp/gnafExport/MAY21_GNAF_PipeSeparatedValue/G-NAF/G-NAF MAY 2021"
 DATABASE_FILE="/map/fullGNAF.db"
 
 echo "### Loading Data into ${DATABASE_FILE}"
