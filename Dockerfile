@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:21.10
 
 RUN apt-get update && apt-get install -y \
     sqlite3 zip curl
